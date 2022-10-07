@@ -8,6 +8,10 @@ public record PlayAutoPrime(Page page) {
         return new PlayAutocomplete(page);
     }
 
+    public PlayCalendar calendar() {
+        return new PlayCalendar(page);
+    }
+
     public PlayCascadeSelect cascadeSelect() {
         return new PlayCascadeSelect(page);
     }
